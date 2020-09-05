@@ -1,10 +1,10 @@
 import tweepy
 import os # operating system library
 def create_api():
-  consumer_key = os.getenv('consumer_key')
-  consumer_secret = os.getenv('consumer_secret')
-  access_token = os.getenv('access_token')
-  access_token_secret = os.getenv('access_token_secret')
+  consumer_key = 'dK0YdQE8Q5TMygaqMFDRSGKv1'
+  consumer_secret = 'pIr96w0DT8wq4KjU7KHktCHfomJTPKh8UKOmsL5DkqZWGEP37r'
+  access_token ='1301970603709136896-G3JAlqRSxBORqSbgMP5UIk3C1J6raK'
+  access_token_secret = '3FVytV7FQjBH46DgZwJgLOKiMH77CzoRcTfaeiTLhQJUb'
   auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_token, access_token_secret)
   api = tweepy.API(auth,wait_on_rate_limit=True,wait_on_rate_limit_notify=True)
@@ -27,5 +27,5 @@ while True:
     print(f'Updating Twitter Name : Praharshini|{follower_count(user)} Followers')
     print('Waiting to refresh')
     time.sleep(60)
-     
+      
       
